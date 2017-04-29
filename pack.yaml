@@ -1,0 +1,10 @@
+---
+
+name: prometheus
+ref: prometheus
+description: Interact with Prometheus HTTP API
+keywords:
+    - prometheus
+version: 0.1.1
+author: Daniel Chamot
+email: daniel@nullkarma.com
