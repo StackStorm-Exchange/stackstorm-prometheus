@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-from st2common.runners.base_action import Action
 from collections import defaultdict
+from st2common.runners.base_action import Action
 
 
 class AlertAggregation(Action):
