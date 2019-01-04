@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
 import requests
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+try:
+    from requests.packages.urllib3.exceptions import InsecureRequestWarning
+except ImportError:
+    from urllib3.exceptions import InsecureRequestWarning
 from st2common.runners.base_action import Action
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)  # pylint: disable=no-member
 
