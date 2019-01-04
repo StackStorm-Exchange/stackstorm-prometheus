@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 
-from st2common.runners.base_action import Action
 import requests
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+try:
+    from requests.packages.urllib3.exceptions import InsecureRequestWarning
+except ImportError:
+    from urllib3.exceptions import InsecureRequestWarning
+from st2common.runners.base_action import Action
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)  # pylint: disable=no-member
 
 
@@ -23,8 +26,8 @@ class RequestsMethod(object):
                                    params=params, json=json, verify=verify_ssl)
         if response.status_code:
             return response.json()
-        else:
-            return response.text
+
+        return response.text
 
 
 class PrometheusAPI(Action):

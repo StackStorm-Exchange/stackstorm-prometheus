@@ -4,6 +4,6 @@ ref: prometheus
 description: Interact with Prometheus HTTP API
 keywords:
     - prometheus
-version: 0.1.3
+version: 0.1.4
 author: Daniel Chamot
 email: daniel@nullkarma.com
