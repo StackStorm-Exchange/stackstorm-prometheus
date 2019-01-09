@@ -4,6 +4,11 @@ ref: prometheus
 description: Interact with Prometheus HTTP API
 keywords:
     - prometheus
+    - monitoring
+    - metrics
 version: 0.1.4
+python_versions:
+    - "2"
+    - "3"
 author: Daniel Chamot
 email: daniel@nullkarma.com
