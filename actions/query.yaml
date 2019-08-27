@@ -12,4 +12,3 @@ parameters:
   url:
     description: "Prometheus Url"
     type: string
-    required: true
