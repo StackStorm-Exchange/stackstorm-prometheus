@@ -9,3 +9,7 @@ entry_point: series.py
 parameters:
   queries:
     type: object
+  url:
+    description: "Prometheus Url"
+    type: string
+    required: true

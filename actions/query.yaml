@@ -9,3 +9,7 @@ entry_point: query.py
 parameters:
   query:
     type: string
+  url:
+    description: "Prometheus Url"
+    type: string
+    required: true
