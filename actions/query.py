@@ -8,5 +8,6 @@ class PrometheusQuery(PrometheusAPI):
         super(PrometheusQuery, self).__init__(config=config)
 
     def run(self, query, url):
-        endpoint = "{}/api/v1/query".format(url)
+        url_temp = self.url if url == "" else url
+        endpoint = "{}/api/v1/query".format(url_temp)
         return True, self._get(endpoint, params={"query": query})
