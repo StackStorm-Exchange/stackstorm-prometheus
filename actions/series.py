@@ -9,6 +9,6 @@ class PrometheusSeries(PrometheusAPI):
 
     def run(self, queries, url):
         params = ['match[]=' + query for __, query in queries.iteritems()]
-        endpoint = "{}/api/v1/series?{}".format(url, '&'.join(params))
-
+        url_temp = self.url if url == "" else url
+        endpoint = "{}/api/v1/series?{}".format(url_temp, '&'.join(params))
         return True, self._get(endpoint, None)
