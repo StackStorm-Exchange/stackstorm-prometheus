@@ -8,6 +8,7 @@ url: http://prometheus.tld:9090
 
 ## Actions
 
-* `alert.aggregation` 
+* `alert.aggregation`
 * `query` - query Prometheus API
 * `series` - query Prometheus Series API
+* `Targets` - query Prometheus Targets API
