@@ -6,6 +6,7 @@ try:
 except ImportError:
     from urllib3.exceptions import InsecureRequestWarning
 from st2common.runners.base_action import Action
+
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)  # pylint: disable=no-member
 
 
