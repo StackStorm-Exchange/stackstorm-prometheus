@@ -6,7 +6,7 @@ keywords:
     - prometheus
     - monitoring
     - metrics
-version: 0.2.1
+version: 0.3.0
 python_versions:
     - "2"
     - "3"
