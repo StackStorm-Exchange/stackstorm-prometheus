@@ -1,12 +1,10 @@
 ---
-
-name: Targets
+name: targets
 description: 'Prometheus Targets API'
-
 runner_type: python-script
 entry_point: targets.py
-
 parameters:
   url:
-    description: "Prometheus Url"
+    description: "Prometheus URL"
     type: string
+    required: false
